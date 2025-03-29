@@ -1,7 +1,1607 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Accueil
+{% endblock %}
 
 {% block body %}
+	<section class="main-slider-one">
+		<div class="main-slider-one__carousel grdeen-owl__carousel owl-carousel" data-owl-options='{
+						"loop": true,
+						"animateOut": "fadeOut",
+						"animateIn": "fadeIn",
+						"items": 1,
+						"autoplay": true,
+						"autoplayTimeout": 7000,
+						"smartSpeed": 1000,
+						"nav": true,
+				        "navText": ["<span class=\"icon-left-arrow11\"></span>","<span class=\"icon-right-arrow1\"></span>"],
+						"dots": false,
+						"margin": 0
+						}'>
+			<div class="item">
+				<div class="main-slider-one__item">
+					<div class="main-slider-one__shape"><img src="{{asset('themes/base/assets/images/shapes/slider-shape1-1.png')}}" alt="grdeen"></div>
+					<div class="main-slider-one__bg" style="background-image: url({{asset('themes/base/assets/images/backgrounds/slider-1-1.jpg')}});"></div>
+					<div class="main-slider-one__overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main-slider-one__content">
+									<h5 class="main-slider-one__sub-title"><img src="{{asset('themes/base/assets/images/shapes/slider-shape1-2.png')}}" alt="grdeen"/>
+										BIENVENUE CHEZ {{appName}}</h5>
+									<!-- slider-sub-title -->
+									<h2 class="main-slider-one__title">Jardinage
+										<br>
+										& aménagement paysager
+										<br>
+										services</h2>
+									<!-- slider-title -->
+									<div class="main-slider-one__btn">
+										<a href="{{path('services')}}" class="grdeen-btn grdeen-btn--base">
+											<span>Nos Services</span>
+										</a>
+										<!-- slider-btn -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="main-slider-one__item">
+					<div class="main-slider-one__shape"><img src="{{asset('themes/base/assets/images/shapes/slider-shape1-1.png')}}" alt="grdeen"></div>
+					<div class="main-slider-one__bg" style="background-image: url({{asset('themes/base/assets/images/backgrounds/slider-1-2.jpg')}});"></div>
+					<div class="main-slider-one__overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main-slider-one__content">
+									<h5 class="main-slider-one__sub-title"><img src="{{asset('themes/base/assets/images/shapes/slider-shape1-2.png')}}" alt="grdeen"/>
+										BIENVENUE CHEZ {{appName}}</h5>
+									<!-- slider-sub-title -->
+									<h2 class="main-slider-one__title">Jardinage
+										<br>
+										& aménagement paysager
+										<br>
+										services</h2>
+									<!-- slider-title -->
+									<div class="main-slider-one__btn">
+										<a href="{{path('services')}}" class="grdeen-btn grdeen-btn--base">
+											<span>Nos Services</span>
+										</a>
+										<!-- slider-btn -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="main-slider-one__item">
+					<div class="main-slider-one__shape"><img src="{{asset('themes/base/assets/images/shapes/slider-shape1-1.png')}}" alt="grdeen"></div>
+					<div class="main-slider-one__bg" style="background-image: url({{asset('themes/base/assets/images/backgrounds/slider-1-3.jpg')}});"></div>
+					<div class="main-slider-one__overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main-slider-one__content">
+									<h5 class="main-slider-one__sub-title"><img src="{{asset('themes/base/assets/images/shapes/slider-shape1-2.png')}}" alt="grdeen"/>
+										BIENVENUE CHEZ {{appName}}</h5>
+									<!-- slider-sub-title -->
+									<h2 class="main-slider-one__title">Jardinage
+										<br>
+										& aménagement paysager
+										<br>
+										services</h2>
+									<!-- slider-title -->
+									<div class="main-slider-one__btn">
+										<a href="{{path('services')}}" class="grdeen-btn grdeen-btn--base">
+											<span>Nos Services</span>
+										</a>
+										<!-- slider-btn -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- main-slider-end -->
 
+	<!-- Feature Start -->
+	<section class="feature-one">
+		<div class="container-fluid">
+			<div class="row gutter-y-30 feature-one__row">
+				<div class="col-xxl-3 col-xl-6 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+					<div class="feature-one__item">
+						<div class="feature-one__item__content">
+							<h4 class="feature-one__item__title">Quality services</h4>
+							<p class="feature-one__item__text">Lorem ipsum dolor sit amet ultrices gravida risus commodo viverra</p>
+						</div>
+
+						<div class="feature-one__item__iconwrap">
+							<div class="feature-one__item__icon">
+								<i class="icon-guaranteed"></i>
+							</div>
+						</div>
+					</div>
+					<!-- feature-item -->
+				</div>
+
+				<div class="col-xxl-3 col-xl-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+					<div class="feature-one__item">
+						<div class="feature-one__item__content">
+							<h4 class="feature-one__item__title">Professional team</h4>
+							<p class="feature-one__item__text">Lorem ipsum dolor sit amet ultrices gravida risus commodo viverra</p>
+						</div>
+
+						<div class="feature-one__item__iconwrap">
+							<div class="feature-one__item__icon">
+								<i class="icon-gardening-1"></i>
+							</div>
+						</div>
+					</div>
+					<!-- feature-item -->
+				</div>
+
+				<div class="col-xxl-3 col-xl-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+					<div class="feature-one__item">
+						<div class="feature-one__item__content">
+							<h4 class="feature-one__item__title">Garden Award</h4>
+							<p class="feature-one__item__text">Lorem ipsum dolor sit amet ultrices gravida risus commodo viverra</p>
+						</div>
+
+						<div class="feature-one__item__iconwrap">
+							<div class="feature-one__item__icon">
+								<i class="icon-trophy"></i>
+							</div>
+						</div>
+					</div>
+					<!-- feature-item -->
+				</div>
+
+				<div class="col-xxl-3 col-xl-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+					<div class="feature-one__item">
+						<div class="feature-one__item__content">
+							<h4 class="feature-one__item__title">Quality products</h4>
+							<p class="feature-one__item__text">Lorem ipsum dolor sit amet ultrices gravida risus commodo viverra</p>
+						</div>
+
+						<div class="feature-one__item__iconwrap">
+							<div class="feature-one__item__icon">
+								<i class="icon-plant-a-tree"></i>
+							</div>
+						</div>
+					</div>
+					<!-- feature-item -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Feature End -->
+
+	<section class="about-one">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="about-one__image wow fadeInLeft" data-wow-delay="100ms">
+						<div class="about-one__shapetop"></div>
+						<img class="about-one__bigimage" src="{{asset('themes/base/assets/images/resources/about-image1-1.jpg')}}" alt="grdeen">
+						<div class="about-one__smimage">
+							<img src="{{asset('themes/base/assets/images/resources/about-image1-2.jpg')}}" alt="grdeen">
+						</div>
+
+						<div class="about-one__shapebottom"></div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
+
+				<div class="col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+					<div class="about-one__content">
+						<div class="sec-title">
+
+							<div class="sec-title__img">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+									<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+										<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+													c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+									</g>
+								</svg>
+							</div>
+
+
+							<span class="sec-title__tagline">Introduce Our Company</span>
+							<!-- /.sec-title__tagline -->
+
+							<h2 class="sec-title__title">Brings your dream garden to life</h2>
+							<!-- /.sec-title__title -->
+						</div>
+						<!-- /.sec-title -->
+						<p class="about-one__content__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							                                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+						</p>
+						<div class="about-one__content__qualitwrap">
+							<h4 class="about-one__content__qualitwrap__title">Quality
+								<br>
+								gardening services</h4>
+							<p class="about-one__content__text qualit-text">Lorem ipsum dolor sit amet ultrices
+								<br>
+								gravida risus commodo viverra</p>
+							<div class="about-one__content__qualitwrap__pricesbox text-center">
+								<strong class="about-one__content__qualitwrap__price">70K</strong>
+								<span class="about-one__content__qualitwrap__text">Satisfied customers</span>
+							</div>
+						</div>
+						<p class="about-one__content__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<ul class="list-unstyled about-one__content__list">
+							<li>
+								<i class="icon-check-solid"></i>Lorem ipsum or lipsum as it is sometimes known</li>
+							<li>
+								<i class="icon-check-solid"></i>Professional gardening service for all your home</li>
+							<li>
+								<i class="icon-check-solid"></i>There are many variations of passages of Lorem Ipsum available</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.about-one -->
+
+	<section class="service-one">
+		<div class="service-one__bg" style="background-image: url({{asset('themes/base/assets/images/backgrounds/service-bg1-1.jpg')}});"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wow fadeInUp" data-wow-delay="100ms">
+					<div class="sec-title">
+
+						<div class="sec-title__img">
+							<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+								<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+									<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+												c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+								</g>
+							</svg>
+						</div>
+
+
+						<span class="sec-title__tagline">Our Services</span>
+						<!-- /.sec-title__tagline -->
+
+						<h2 class="sec-title__title">The services we offer to
+							<br>
+							our clients</h2>
+						<!-- /.sec-title__title -->
+					</div>
+					<!-- /.sec-title -->
+				</div>
+			</div>
+
+			<div class="row gutter-y-30">
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+					<div class="service-one__item">
+						<div class="service-one__item__titlewrap d-flex flex-wrap align-items-center">
+							<div class="service-one__item__titlecol">
+								<span class="service-one__item__count"></span>
+								<h4 class="service-one__item__title">
+									<a href="service-d-garden.html">Garden care</a>
+								</h4>
+							</div>
+
+							<div class="service-one__item__iconwrap">
+								<div class="service-one__item__icon">
+									<i class="icon-planting"></i>
+								</div>
+								<!-- /.service-icon -->
+							</div>
+						</div>
+						<p class="service-one__item__text">Lorem ipsum dolor sit amet con lorem etur adipiscing elit sed do eiusmod ipsum tempor incididunt sed garden offer</p>
+						<div class="service-one__item__btmwrap d-flex align-items-center justify-content-between">
+							<a class="service-one__item__iconlink" href="service-d-garden.html">
+								<i class="icon-right-up"></i>
+							</a>
+							<a class="service-one__item__link" href="service-d-garden.html">Discover More</a>
+						</div>
+					</div>
+					<!-- /.service-card-one -->
+				</div>
+
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+					<div class="service-one__item">
+						<div class="service-one__item__titlewrap d-flex flex-wrap align-items-center">
+							<div class="service-one__item__titlecol">
+								<span class="service-one__item__count"></span>
+								<h4 class="service-one__item__title">
+									<a href="service-d-spring.html">Spring cleaning</a>
+								</h4>
+							</div>
+
+							<div class="service-one__item__iconwrap">
+								<div class="service-one__item__icon">
+									<i class="icon-cutting"></i>
+								</div>
+								<!-- /.service-icon -->
+							</div>
+						</div>
+						<p class="service-one__item__text">Lorem ipsum dolor sit amet con lorem etur adipiscing elit sed do eiusmod ipsum tempor incididunt sed garden offer</p>
+						<div class="service-one__item__btmwrap d-flex align-items-center justify-content-between">
+							<a class="service-one__item__iconlink" href="service-d-spring.html">
+								<i class="icon-right-up"></i>
+							</a>
+							<a class="service-one__item__link" href="service-d-spring.html">Discover More</a>
+						</div>
+					</div>
+					<!-- /.service-card-one -->
+				</div>
+
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+					<div class="service-one__item">
+						<div class="service-one__item__titlewrap d-flex flex-wrap align-items-center">
+							<div class="service-one__item__titlecol">
+								<span class="service-one__item__count"></span>
+								<h4 class="service-one__item__title">
+									<a href="service-d-lawn.html">Lawn care</a>
+								</h4>
+							</div>
+
+							<div class="service-one__item__iconwrap">
+								<div class="service-one__item__icon">
+									<i class="icon-gardener-1"></i>
+								</div>
+								<!-- /.service-icon -->
+							</div>
+						</div>
+						<p class="service-one__item__text">Lorem ipsum dolor sit amet con lorem etur adipiscing elit sed do eiusmod ipsum tempor incididunt sed garden offer</p>
+						<div class="service-one__item__btmwrap d-flex align-items-center justify-content-between">
+							<a class="service-one__item__iconlink" href="service-d-lawn.html">
+								<i class="icon-right-up"></i>
+							</a>
+							<a class="service-one__item__link" href="service-d-lawn.html">Discover More</a>
+						</div>
+					</div>
+					<!-- /.service-card-one -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Service End -->
+
+	<section class="work-process-one">
+		<div class="container">
+			<div class="row gutter-y-20">
+				<div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+					<div class="work-process-one__sctwrap">
+						<div class="sec-title">
+
+							<div class="sec-title__img">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+									<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+										<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+													c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+									</g>
+								</svg>
+							</div>
+
+
+							<span class="sec-title__tagline">Our work process</span>
+							<!-- /.sec-title__tagline -->
+
+							<h2 class="sec-title__title">See how we complete the work</h2>
+							<!-- /.sec-title__title -->
+						</div>
+						<!-- /.sec-title -->
+					</div>
+				</div>
+				<div class="col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+					<div class="work-process-one__infowrap">
+						<p class="work-process-one__infowrap__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row gutter-y-30">
+				<div class="col-xl-3 col-lg-6 wow fadeIn" data-wow-delay="00ms">
+					<div class="work-process-one__col">
+						<div class="work-process-one__col__circlewrap">
+							<div class="work-process-one__col__icon">
+								<i class="icon-standing-persons-salutation-talking-one-to-each-other"></i>
+							</div>
+						</div>
+						<div class="work-process-one__col__info text-center">
+							<h4 class="work-process-one__col__title">Discuss plan</h4>
+							<p class="work-process-one__col__text">Lorem ipsum dolor sit amet consectetur adipiscing,Quis ipsum suspendisse
+							</p>
+						</div>
+						<div class="work-process-one__col__shapebg"></div>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-lg-6 wow fadeIn" data-wow-delay="100ms">
+					<div class="work-process-one__col">
+						<div class="work-process-one__col__circlewrap">
+							<div class="work-process-one__col__icon">
+								<i class="icon-farmer"></i>
+							</div>
+						</div>
+						<div class="work-process-one__col__info text-center">
+							<h4 class="work-process-one__col__title">Garden design</h4>
+							<p class="work-process-one__col__text">Lorem ipsum dolor sit amet consectetur adipiscing,Quis ipsum suspendisse
+							</p>
+						</div>
+						<div class="work-process-one__col__shapebg"></div>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-lg-6 wow fadeIn" data-wow-delay="200ms">
+					<div class="work-process-one__col">
+						<div class="work-process-one__col__circlewrap">
+							<div class="work-process-one__col__icon">
+								<i class="icon-plant"></i>
+							</div>
+						</div>
+						<div class="work-process-one__col__info text-center">
+							<h4 class="work-process-one__col__title">Planting</h4>
+							<p class="work-process-one__col__text">Lorem ipsum dolor sit amet consectetur adipiscing,Quis ipsum suspendisse
+							</p>
+						</div>
+						<div class="work-process-one__col__shapebg"></div>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-lg-6 wow fadeIn" data-wow-delay="300ms">
+					<div class="work-process-one__col">
+						<div class="work-process-one__col__circlewrap">
+							<div class="work-process-one__col__icon">
+								<i class="icon-pot"></i>
+							</div>
+						</div>
+						<div class="work-process-one__col__info text-center">
+							<h4 class="work-process-one__col__title">Finish the job</h4>
+							<p class="work-process-one__col__text">Lorem ipsum dolor sit amet consectetur adipiscing,Quis ipsum suspendisse
+							</p>
+						</div>
+						<div class="work-process-one__col__shapebg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- work-process end -->
+
+	<section class="our-benefits-one">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="our-benefits-one__left wow fadeInRight" data-wow-delay="100ms">
+					<div class="our-benefits-one__content">
+						<div class="our-benefits-one__content__sctwap">
+							<div class="sec-title">
+
+								<div class="sec-title__img">
+									<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+										<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+											<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+														c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+										</g>
+									</svg>
+								</div>
+
+
+								<span class="sec-title__tagline">Our BENEFITS</span>
+								<!-- /.sec-title__tagline -->
+
+								<h2 class="sec-title__title">Why is mine different from others?</h2>
+								<!-- /.sec-title__title -->
+							</div>
+							<!-- /.sec-title -->
+						</div>
+
+						<p class="our-benefits-one__content__text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+						</p>
+
+						<div class="our-benefits-one__content__qualitwrap d-flex flex-wrap">
+							<div class="our-benefits-one__content__qualitwrap__col d-flex flex-wrap">
+								<div class="our-benefits-one__content__qualitwrap__icon">
+									<i class="icon-gardening-1"></i>
+								</div>
+								<h4 class="our-benefits-one__content__qualitwrap__title">Quality
+									<br>
+									services</h4>
+							</div>
+
+							<div class="our-benefits-one__content__qualitwrap__col d-flex flex-wrap">
+								<div class="our-benefits-one__content__qualitwrap__icon our-benefits-one__content__qualitwrap__icon--groupicon">
+									<i class="icon-group"></i>
+								</div>
+								<h4 class="our-benefits-one__content__qualitwrap__title">Skilled
+									<br>
+									Team
+								</h4>
+							</div>
+						</div>
+
+						<p class="our-benefits-one__content__text">Quis ipsum suspendisse ultrices gravida nor again is there anyone who loves or pursues or desires to obtain pain
+						</p>
+
+						<div class="our-benefits-one__content__listwrap d-flex justify-content-between">
+							<ul class="list-unstyled our-benefits-one__content__list">
+								<li>
+									<i class="icon-check-solid"></i>Expert team members</li>
+								<li>
+									<i class="icon-check-solid"></i>Afordable quality services</li>
+								<li>
+									<i class="icon-check-solid"></i>Professional Gardening Services
+								</li>
+							</ul>
+							<a href="about.html" class="grdeen-btn our-benefits-one__btn">
+								<span>Find out more</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
+
+				<div class="our-benefits-one__right">
+					<div class="our-benefits-one__image wow fadeInLeft" data-wow-delay="100ms">
+						<div class="our-benefits-one__shapetop"></div>
+						<img class="our-benefits-one__bigimage" src="{{asset('themes/base/assets/images/resources/benefits-img1-1.jpg')}}" alt="grdeen">
+						<div class="our-benefits-one__smimage">
+							<img src="{{asset('themes/base/assets/images/resources/benefits-img1-2.jpg')}}" alt="grdeen">
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.our-benefits-one -->
+
+	<section class="project-one">
+		<div class="project-one__bg" style="background-image: url('{{asset('themes/base/assets/images/backgrounds/project-bg1-1.jpg')}}');"></div>
+		<div class="container">
+			<div class="project-one__sctwrap text-center">
+				<div class="sec-title">
+
+					<div class="sec-title__img">
+						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+							<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+								<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+											c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+							</g>
+						</svg>
+					</div>
+
+
+					<span class="sec-title__tagline">Our completed projects</span>
+					<!-- /.sec-title__tagline -->
+
+					<h2 class="sec-title__title">View some of our best
+						<br>
+						recent work</h2>
+					<!-- /.sec-title__title -->
+				</div>
+				<!-- /.sec-title -->
+			</div>
+			<div class="project-one__carousel grdeen-owl__carousel grdeen-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+								"items": 1,
+								"margin": 30,
+								"loop": false,
+								"smartSpeed": 700,
+								"nav": false,
+								"navText": "",
+								"dots": false,
+								"autoplay": false,
+								"responsive": {
+									"0": {
+										"items": 1,
+										"dots": true
+									},
+									"768": {
+										"items": 2,
+										"dots": false
+									},
+									"992": {
+										"items": 3,
+										"dots": false
+									}
+								}
+								}'>
+				<div class="item">
+					<div class="project-one__item wow fadeInUp" data-wow-delay="00ms">
+						<div class="project-one__item__image">
+							<img src="{{asset('themes/base/assets/images/resources/project1-1.jpg')}}" alt="project">
+						</div>
+						<div class="project-one__item__info">
+							<div class="project-one__item__bg">
+								<strong class="project-one__item__tagtext">Gardening</strong>
+								<h5 class="project-one__item__heading">
+									<a href="project-details.html">Garden maintenance</a>
+								</h5>
+								<a href="project-details.html" class="project-one__item__right-arrow">
+									<i class="icon-right-arrow2"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="project-one__item wow fadeInUp" data-wow-delay="100ms">
+						<div class="project-one__item__image">
+							<img src="{{asset('themes/base/assets/images/resources/project1-2.jpg')}}" alt="project">
+						</div>
+						<div class="project-one__item__info">
+							<div class="project-one__item__bg">
+								<strong class="project-one__item__tagtext">Gardening</strong>
+								<h5 class="project-one__item__heading">
+									<a href="project-details.html">Lawn care & mowing</a>
+								</h5>
+								<a href="project-details.html" class="project-one__item__right-arrow">
+									<i class="icon-right-arrow2"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="project-one__item wow fadeInUp" data-wow-delay="200ms">
+						<div class="project-one__item__image">
+							<img src="{{asset('themes/base/assets/images/resources/project1-3.jpg')}}" alt="project">
+						</div>
+						<div class="project-one__item__info">
+							<div class="project-one__item__bg">
+								<strong class="project-one__item__tagtext">Gardening</strong>
+								<h5 class="project-one__item__heading">
+									<a href="project-details.html">Garden design</a>
+								</h5>
+								<a href="project-details.html" class="project-one__item__right-arrow">
+									<i class="icon-right-arrow2"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="project-one__moreproject d-flex justify-content-between align-items-center wow fadeInUp" data-wow-delay="200ms">
+				<h5 class="project-one__moreproject__title">Check out our gardening portfolio
+				</h5>
+				<a href="project.html" class="grdeen-btn project-one__moreproject__btn">
+					<span>View All Projects</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- /.project-one -->
+
+	<section class="funfact-one">
+		<div class="container">
+			<div class="row gutter-y-30">
+				<div class="col-lg-6">
+					<div class="funfact-one__content">
+						<div class="funfact-one__content__sctwrap wow fadeInUp" data-wow-delay="100ms">
+							<div class="sec-title">
+
+								<div class="sec-title__img">
+									<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+										<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+											<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+														c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+										</g>
+									</svg>
+								</div>
+
+
+								<span class="sec-title__tagline">OUR FUN FACTS</span>
+								<!-- /.sec-title__tagline -->
+
+								<h2 class="sec-title__title">The grass is always
+									<br>
+									greener on our side</h2>
+								<!-- /.sec-title__title -->
+							</div>
+							<!-- /.sec-title -->
+						</div>
+						<p class="funfact-one__content__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, randomised words which don't look even slightly believable</p>
+						<div class="funfact-one__content__bookwrap d-flex align-items-center">
+							<a href="contact.html" class="grdeen-btn funfact-one__content__bookwrap__btn">
+								<span>Book Now</span>
+							</a>
+							<p class="funfact-one__content__bookwrap__text">Book a FREE professional gardening consultation!</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<ul class="list-unstyled funfact-one__list">
+						<li class="funfact-one__item count-box">
+							<div class="work-process-one__col">
+								<div class="work-process-one__col__circlewrap">
+									<div class="work-process-one__col__icon">
+										<div class="funfact-one__countwrap">
+											<strong class="funfact-one__count count-text" data-stop="10" data-speed="1500"></strong>
+											<span class="funfact-one__count">K</span>
+										</div>
+									</div>
+								</div>
+								<div class="work-process-one__col__info text-center">
+									<h3 class="work-process-one__col__title">Projects Completed</h3>
+									<p class="work-process-one__col__text">Lorem ipsum dolor sit amet</p>
+								</div>
+								<div class="work-process-one__col__shapebg"></div>
+							</div>
+						</li>
+						<!-- /.funfact-one__item -->
+
+						<li class="funfact-one__item count-box">
+							<div class="work-process-one__col">
+								<div class="work-process-one__col__circlewrap">
+									<div class="work-process-one__col__icon">
+										<div class="funfact-one__countwrap">
+											<strong class="funfact-one__count count-text" data-stop="2110" data-speed="1500"></strong>
+										</div>
+									</div>
+								</div>
+								<div class="work-process-one__col__info text-center">
+									<h3 class="work-process-one__col__title">Satisfied Customers</h3>
+									<p class="work-process-one__col__text">Lorem ipsum dolor sit amet</p>
+								</div>
+								<div class="work-process-one__col__shapebg"></div>
+							</div>
+						</li>
+						<!-- /.funfact-one__item -->
+					</ul>
+					<!-- /.list-unstyled funfact-one__list -->
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.funfact-one -->
+
+	<section class="testimonials-one">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="sec-title">
+
+						<div class="sec-title__img">
+							<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+								<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+									<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+												c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+								</g>
+							</svg>
+						</div>
+
+
+						<span class="sec-title__tagline">OUR TESTIMONIALS</span>
+						<!-- /.sec-title__tagline -->
+
+						<h2 class="sec-title__title">Hear from our happy
+							<br>
+							customers review</h2>
+						<!-- /.sec-title__title -->
+					</div>
+					<!-- /.sec-title -->
+				</div>
+			</div>
+
+			<div class="testimonials-one__carousel grdeen-owl__carousel grdeen-owl__carousel--with-shadow grdeen-owl__carousel--basic-nav owl-carousel" data-owl-options='{
+								"items": 1,
+								"margin": 0,
+								"loop": false,
+								"smartSpeed": 700,
+								"nav": false,
+								"navText": "",
+								"dots": true,
+								"autoplay": false,
+								"responsive": {
+									"0": {
+										"items": 1
+									},
+									"767": {
+										"items": 2,
+										"margin": 30
+									}
+								}
+							}'>
+				<div class="item">
+					<div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+						<div class="testimonials-card__inner">
+							<div class="testimonials-card__top">
+								<div class="testimonials-card__image">
+									<img src="{{asset('themes/base/assets/images/resources/testimonial-man1-1.png')}}" alt="Alen Martin">
+								</div>
+								<!-- /.testimonials-card__image -->
+								<div class="testimonials-card__top__left">
+									<div class="testimonials-card__rating">
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<!-- /.testimonials-card__rating -->
+
+									<h4 class="testimonials-card__name">
+										Alen Martin
+									</h4>
+									<!-- /.testimonials-card__name -->
+									<p class="testimonials-card__designation">Founder</p>
+									<!-- /.testimonials-card__designation -->
+								</div>
+								<!-- /.testimonials-card__top__left -->
+							</div>
+							<!-- /.testimonials-card__top -->
+							<div class="testimonials-card__quote">
+								<i class="icon-quote"></i>
+							</div>
+							<div class="testimonials-card__contentwrap">
+								<div class="testimonials-card__masking"></div>
+								<div class="testimonials-card__content">
+									As a result of the garden build service provided by dimo and his company, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua laboris nisi ut aliquip ex ea commodo
+								</div>
+								<!-- /.testimonials-card__content -->
+							</div>
+						</div>
+						<!-- /.testimonials-card__inner -->
+					</div>
+					<!-- /.testimonials-card -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+						<div class="testimonials-card__inner">
+							<div class="testimonials-card__top">
+								<div class="testimonials-card__image">
+									<img src="{{asset('themes/base/assets/images/resources/testimonial-man1-2.png')}}" alt="Paul J. Florez">
+								</div>
+								<!-- /.testimonials-card__image -->
+								<div class="testimonials-card__top__left">
+									<div class="testimonials-card__rating">
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<!-- /.testimonials-card__rating -->
+
+									<h4 class="testimonials-card__name">
+										Paul J. Florez
+									</h4>
+									<!-- /.testimonials-card__name -->
+									<p class="testimonials-card__designation">Founder</p>
+									<!-- /.testimonials-card__designation -->
+								</div>
+								<!-- /.testimonials-card__top__left -->
+							</div>
+							<!-- /.testimonials-card__top -->
+							<div class="testimonials-card__quote">
+								<i class="icon-quote"></i>
+							</div>
+							<div class="testimonials-card__contentwrap">
+								<div class="testimonials-card__masking"></div>
+								<div class="testimonials-card__content">
+									As a result of the garden build service provided by dimo and his company, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua laboris nisi ut aliquip ex ea commodo
+								</div>
+								<!-- /.testimonials-card__content -->
+							</div>
+						</div>
+						<!-- /.testimonials-card__inner -->
+					</div>
+					<!-- /.testimonials-card -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+						<div class="testimonials-card__inner">
+							<div class="testimonials-card__top">
+								<div class="testimonials-card__image">
+									<img src="{{asset('themes/base/assets/images/resources/testimonial-man1-3.png')}}" alt="Laverne C. McArthur">
+								</div>
+								<!-- /.testimonials-card__image -->
+								<div class="testimonials-card__top__left">
+									<div class="testimonials-card__rating">
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<!-- /.testimonials-card__rating -->
+
+									<h4 class="testimonials-card__name">
+										Laverne C. McArthur
+									</h4>
+									<!-- /.testimonials-card__name -->
+									<p class="testimonials-card__designation">Founder</p>
+									<!-- /.testimonials-card__designation -->
+								</div>
+								<!-- /.testimonials-card__top__left -->
+							</div>
+							<!-- /.testimonials-card__top -->
+							<div class="testimonials-card__quote">
+								<i class="icon-quote"></i>
+							</div>
+							<div class="testimonials-card__contentwrap">
+								<div class="testimonials-card__masking"></div>
+								<div class="testimonials-card__content">
+									As a result of the garden build service provided by dimo and his company, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua laboris nisi ut aliquip ex ea commodo
+								</div>
+								<!-- /.testimonials-card__content -->
+							</div>
+						</div>
+						<!-- /.testimonials-card__inner -->
+					</div>
+					<!-- /.testimonials-card -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+						<div class="testimonials-card__inner">
+							<div class="testimonials-card__top">
+								<div class="testimonials-card__image">
+									<img src="{{asset('themes/base/assets/images/resources/testimonial-man1-1.png')}}" alt="Larry M. Casillas">
+								</div>
+								<!-- /.testimonials-card__image -->
+								<div class="testimonials-card__top__left">
+									<div class="testimonials-card__rating">
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="testimonials-card__rating__start">
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<!-- /.testimonials-card__rating -->
+
+									<h4 class="testimonials-card__name">
+										Larry M. Casillas
+									</h4>
+									<!-- /.testimonials-card__name -->
+									<p class="testimonials-card__designation">Founder</p>
+									<!-- /.testimonials-card__designation -->
+								</div>
+								<!-- /.testimonials-card__top__left -->
+							</div>
+							<!-- /.testimonials-card__top -->
+							<div class="testimonials-card__quote">
+								<i class="icon-quote"></i>
+							</div>
+							<div class="testimonials-card__contentwrap">
+								<div class="testimonials-card__masking"></div>
+								<div class="testimonials-card__content">
+									As a result of the garden build service provided by dimo and his company, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua laboris nisi ut aliquip ex ea commodo
+								</div>
+								<!-- /.testimonials-card__content -->
+							</div>
+						</div>
+						<!-- /.testimonials-card__inner -->
+					</div>
+					<!-- /.testimonials-card -->
+				</div>
+				<!-- /.item -->
+			</div>
+			<!-- /.testimonials-one__carousel -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.testimonials-one -->
+
+	<section class="free-booking-one">
+		<div class="free-booking-one__bg" style="background-image: url('{{asset('themes/base/assets/images/shapes/booking-bg1-1.jpg')}}');"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 wow fadeInUp" data-wow-delay="100ms">
+					<div class="free-booking-one__content">
+						<div class="free-booking-one__sctwrap wow fadeInUp" data-wow-delay="100ms">
+							<div class="sec-title">
+
+								<div class="sec-title__img">
+									<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+										<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+											<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+														c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+										</g>
+									</svg>
+								</div>
+
+
+								<span class="sec-title__tagline">Free Book Now</span>
+								<!-- /.sec-title__tagline -->
+
+								<h2 class="sec-title__title">Book a FREE
+									<br>
+									professional gardening
+									<br>
+									consultation!</h2>
+								<!-- /.sec-title__title -->
+							</div>
+							<!-- /.sec-title -->
+						</div>
+						<form class="free-booking-one__form contact-form-validated form-one wow fadeInUp" data-wow-duration="1500ms" action="inc/sendemail.php">
+							<div class="form-one__group">
+								<div class="form-one__control">
+									<input type="text" name="name" placeholder="Your Name">
+								</div>
+								<!-- /.form-one__control -->
+								<div class="form-one__control">
+									<input type="email" name="email" placeholder="Your Email">
+								</div>
+								<!-- /.form-one__control -->
+								<div class="form-one__control">
+									<input type="text" name="tel" placeholder="Your Phone">
+								</div>
+								<!-- /.form-one__control -->
+								<div class="form-one__control">
+									<div class="form-one__control__select">
+										<label class="sr-only" for="language-select">Choose Services</label>
+										<!-- /#language-select.sr-only -->
+										<select class="selectpicker" id="language-select">
+											<option value="Choose Services">Choose Services</option>
+											<option value="Choose Services 01">Choose Services 01</option>
+											<option value="Choose Services 02">Choose Services 02</option>
+										</select>
+									</div>
+									<!-- /.main-menu__language -->
+								</div>
+								<!-- /.form-one__control -->
+								<div class="form-one__control form-one__control--full d-none">
+									<input class="grdeen-datepicker" type="text" name="date" placeholder="Select date">
+									<i class="fa fa-calendar-alt form-one__control__icon"></i>
+								</div>
+								<!-- /.form-one__control form-one__control--full -->
+								<div class="form-one__control form-one__control--full">
+									<textarea name="message" placeholder="Message"></textarea>
+									<!-- /# -->
+								</div>
+								<!-- /.form-one__control -->
+								<div class="form-one__control form-one__control--full">
+									<button type="submit" class="grdeen-btn free-booking-one__submit">
+										<span>Submit Message</span>
+									</button>
+								</div>
+								<!-- /.form-one__control -->
+							</div>
+							<!-- /.form-one__group -->
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-6 wow fadeInUp" data-wow-delay="100ms">
+					<div class="grdeen-stretch-element-inside-column">
+						<div class="free-booking-one__image">
+							<div class="free-booking-one__image__shape">
+								<img src="{{asset('themes/base/assets/images/shapes/booking-shape1-1.png')}}" alt="grdeen">
+							</div>
+							<div class="free-booking-one__image__maskingimg  wow fadeInRight" data-wow-delay="300ms">
+								<img src="{{asset('themes/base/assets/images/resources/book-image1-1.jpg')}}" alt="grdeen">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+		<div class="free-booking-one__shadow">
+			<h1 class="free-booking-one__shadow__title">Gardening</h1>
+		</div>
+	</section>
+	<!-- /.free-booking-one -->
+
+	<section class="blog-one blog-one--home">
+		<div class="container">
+			<div class="blog-one__sctwrap wow fadeInUp" data-wow-delay="100ms">
+				<div class="sec-title">
+
+					<div class="sec-title__img">
+						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" direction="rtl" width="12.000000pt" height="10.000000pt" viewbox="0 0 12.000000 10.000000" preserveaspectratio="xMidYMid meet">
+							<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" stroke="none">
+								<path d="M58 84 c12 -8 22 -24 22 -34 0 -10 -10 -26 -22 -34 l-22 -16 27 0
+											c17 0 32 9 43 25 15 23 15 27 0 50 -11 16 -26 25 -43 25 l-27 0 22 -16z"/>
+							</g>
+						</svg>
+					</div>
+
+
+					<span class="sec-title__tagline">Our Blog post</span>
+					<!-- /.sec-title__tagline -->
+
+					<h2 class="sec-title__title">Read our latest articles
+						<br>
+						post from blog</h2>
+					<!-- /.sec-title__title -->
+				</div>
+				<!-- /.sec-title -->
+			</div>
+			<div class="blog-one__carousel grdeen-owl__carousel grdeen-owl__carousel--with-shadow grdeen-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+								"items": 1,
+								"margin": 30,
+								"loop": false,
+								"smartSpeed": 700,
+								"nav": false,
+								"navText": "",
+								"dots": false,
+								"autoplay": false,
+								"responsive": {
+									"0": {
+										"items": 1,
+										"dots": true
+									},
+									"768": {
+										"items": 2,
+										"dots": false
+									},
+									"992": {
+										"items": 3,
+										"dots": false
+									}
+								}
+							}'>
+				<div class="item">
+					<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+						<div class="blog-card__image">
+							<div class="blog-card__image__inner">
+								<img src="{{asset('themes/base/assets/images/blog/blog-post1-1.jpg')}}" alt="In our gardens  plants for the shade garden">
+								<a href="blog-details.html" class="blog-card__image__link">
+									<span class="sr-only">In our gardens plants for the shade garden</span>
+								</a>
+							</div>
+							<div class="blog-card__date">
+								<span class="blog-card__date__num">03</span>
+								<span class="blog-card__date__month">Sep</span>
+							</div>
+							<!-- /.blog-card__date -->
+						</div>
+						<!-- /.blog-card__image -->
+						<div class="blog-card__content">
+							<ul class="list-unstyled blog-card__meta">
+								<li>
+									<a href="blog-grid-right.html">
+										<span>
+											<i class="fas fa-user"></i>
+										</span>
+										By Admin
+									</a>
+								</li>
+								<li>
+									<a href="blog-details.html">
+										<span>
+											<i class="icon-comment"></i>
+										</span>
+										10 Comments
+									</a>
+								</li>
+							</ul>
+							<!-- /.list-unstyled blog-card__meta -->
+							<h4 class="blog-card__title">
+								<a href="blog-details.html">In our gardens plants for the shade garden</a>
+							</h4>
+							<!-- /.blog-card__title -->
+							<a href="blog-details.html" class="blog-card__link">
+								<span>Read more</span>
+								<span class="blog-card__link__rightarrow">
+									<i class="icon-right-arrow2"></i>
+								</span>
+							</a>
+							<!-- /.blog-card__link -->
+						</div>
+						<!-- /.blog-card__content -->
+					</div>
+					<!-- /.blog-card -->
+				</div>
+				<!-- /.item -->
+				<div class="item">
+					<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+						<div class="blog-card__image">
+							<div class="blog-card__image__inner">
+								<img src="{{asset('themes/base/assets/images/blog/blog-post1-2.jpg')}}" alt="Choosing the right variety of potato to grow at home">
+								<a href="blog-details.html" class="blog-card__image__link">
+									<span class="sr-only">Choosing the right variety of potato to grow at home</span>
+								</a>
+							</div>
+							<div class="blog-card__date">
+								<span class="blog-card__date__num">03</span>
+								<span class="blog-card__date__month">Sep</span>
+							</div>
+							<!-- /.blog-card__date -->
+						</div>
+						<!-- /.blog-card__image -->
+						<div class="blog-card__content">
+							<ul class="list-unstyled blog-card__meta">
+								<li>
+									<a href="blog-grid-right.html">
+										<span>
+											<i class="fas fa-user"></i>
+										</span>
+										By Admin
+									</a>
+								</li>
+								<li>
+									<a href="blog-details.html">
+										<span>
+											<i class="icon-comment"></i>
+										</span>
+										10 Comments
+									</a>
+								</li>
+							</ul>
+							<!-- /.list-unstyled blog-card__meta -->
+							<h4 class="blog-card__title">
+								<a href="blog-details.html">Choosing the right variety of potato to grow at home</a>
+							</h4>
+							<!-- /.blog-card__title -->
+							<a href="blog-details.html" class="blog-card__link">
+								<span>Read more</span>
+								<span class="blog-card__link__rightarrow">
+									<i class="icon-right-arrow2"></i>
+								</span>
+							</a>
+							<!-- /.blog-card__link -->
+						</div>
+						<!-- /.blog-card__content -->
+					</div>
+					<!-- /.blog-card -->
+				</div>
+				<!-- /.item -->
+				<div class="item">
+					<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+						<div class="blog-card__image">
+							<div class="blog-card__image__inner">
+								<img src="{{asset('themes/base/assets/images/blog/blog-post1-3.jpg')}}" alt="The right way to grow the three sisters of the field">
+								<a href="blog-details.html" class="blog-card__image__link">
+									<span class="sr-only">The right way to grow the three sisters of the field</span>
+								</a>
+							</div>
+							<div class="blog-card__date">
+								<span class="blog-card__date__num">03</span>
+								<span class="blog-card__date__month">Sep</span>
+							</div>
+							<!-- /.blog-card__date -->
+						</div>
+						<!-- /.blog-card__image -->
+						<div class="blog-card__content">
+							<ul class="list-unstyled blog-card__meta">
+								<li>
+									<a href="blog-grid-right.html">
+										<span>
+											<i class="fas fa-user"></i>
+										</span>
+										By Admin
+									</a>
+								</li>
+								<li>
+									<a href="blog-details.html">
+										<span>
+											<i class="icon-comment"></i>
+										</span>
+										10 Comments
+									</a>
+								</li>
+							</ul>
+							<!-- /.list-unstyled blog-card__meta -->
+							<h4 class="blog-card__title">
+								<a href="blog-details.html">The right way to grow the three sisters of the field</a>
+							</h4>
+							<!-- /.blog-card__title -->
+							<a href="blog-details.html" class="blog-card__link">
+								<span>Read more</span>
+								<span class="blog-card__link__rightarrow">
+									<i class="icon-right-arrow2"></i>
+								</span>
+							</a>
+							<!-- /.blog-card__link -->
+						</div>
+						<!-- /.blog-card__content -->
+					</div>
+					<!-- /.blog-card -->
+				</div>
+				<!-- /.item -->
+				<div class="item">
+					<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+						<div class="blog-card__image">
+							<div class="blog-card__image__inner">
+								<img src="{{asset('themes/base/assets/images/blog/blog-post1-1.jpg')}}" alt="In our gardens  plants for the shade garden">
+								<a href="blog-details.html" class="blog-card__image__link">
+									<span class="sr-only">In our gardens plants for the shade garden</span>
+								</a>
+							</div>
+							<div class="blog-card__date">
+								<span class="blog-card__date__num">03</span>
+								<span class="blog-card__date__month">Sep</span>
+							</div>
+							<!-- /.blog-card__date -->
+						</div>
+						<!-- /.blog-card__image -->
+						<div class="blog-card__content">
+							<ul class="list-unstyled blog-card__meta">
+								<li>
+									<a href="blog-grid-right.html">
+										<span>
+											<i class="fas fa-user"></i>
+										</span>
+										By Admin
+									</a>
+								</li>
+								<li>
+									<a href="blog-details.html">
+										<span>
+											<i class="icon-comment"></i>
+										</span>
+										10 Comments
+									</a>
+								</li>
+							</ul>
+							<!-- /.list-unstyled blog-card__meta -->
+							<h4 class="blog-card__title">
+								<a href="blog-details.html">In our gardens plants for the shade garden</a>
+							</h4>
+							<!-- /.blog-card__title -->
+							<a href="blog-details.html" class="blog-card__link">
+								<span>Read more</span>
+								<span class="blog-card__link__rightarrow">
+									<i class="icon-right-arrow2"></i>
+								</span>
+							</a>
+							<!-- /.blog-card__link -->
+						</div>
+						<!-- /.blog-card__content -->
+					</div>
+					<!-- /.blog-card -->
+				</div>
+				<!-- /.item -->
+				<div class="item">
+					<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='400ms'>
+						<div class="blog-card__image">
+							<div class="blog-card__image__inner">
+								<img src="{{asset('themes/base/assets/images/blog/blog-post1-2.jpg')}}" alt="Choosing the right variety of potato to grow at home">
+								<a href="blog-details.html" class="blog-card__image__link">
+									<span class="sr-only">Choosing the right variety of potato to grow at home</span>
+								</a>
+							</div>
+							<div class="blog-card__date">
+								<span class="blog-card__date__num">03</span>
+								<span class="blog-card__date__month">Sep</span>
+							</div>
+							<!-- /.blog-card__date -->
+						</div>
+						<!-- /.blog-card__image -->
+						<div class="blog-card__content">
+							<ul class="list-unstyled blog-card__meta">
+								<li>
+									<a href="blog-grid-right.html">
+										<span>
+											<i class="fas fa-user"></i>
+										</span>
+										By Admin
+									</a>
+								</li>
+								<li>
+									<a href="blog-details.html">
+										<span>
+											<i class="icon-comment"></i>
+										</span>
+										10 Comments
+									</a>
+								</li>
+							</ul>
+							<!-- /.list-unstyled blog-card__meta -->
+							<h4 class="blog-card__title">
+								<a href="blog-details.html">Choosing the right variety of potato to grow at home</a>
+							</h4>
+							<!-- /.blog-card__title -->
+							<a href="blog-details.html" class="blog-card__link">
+								<span>Read more</span>
+								<span class="blog-card__link__rightarrow">
+									<i class="icon-right-arrow2"></i>
+								</span>
+							</a>
+							<!-- /.blog-card__link -->
+						</div>
+						<!-- /.blog-card__content -->
+					</div>
+					<!-- /.blog-card -->
+				</div>
+				<!-- /.item -->
+				<div class="item">
+					<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='500ms'>
+						<div class="blog-card__image">
+							<div class="blog-card__image__inner">
+								<img src="{{asset('themes/base/assets/images/blog/blog-post1-3.jpg')}}" alt="The right way to grow the three sisters of the field">
+								<a href="blog-details.html" class="blog-card__image__link">
+									<span class="sr-only">The right way to grow the three sisters of the field</span>
+								</a>
+							</div>
+							<div class="blog-card__date">
+								<span class="blog-card__date__num">03</span>
+								<span class="blog-card__date__month">Sep</span>
+							</div>
+							<!-- /.blog-card__date -->
+						</div>
+						<!-- /.blog-card__image -->
+						<div class="blog-card__content">
+							<ul class="list-unstyled blog-card__meta">
+								<li>
+									<a href="blog-grid-right.html">
+										<span>
+											<i class="fas fa-user"></i>
+										</span>
+										By Admin
+									</a>
+								</li>
+								<li>
+									<a href="blog-details.html">
+										<span>
+											<i class="icon-comment"></i>
+										</span>
+										10 Comments
+									</a>
+								</li>
+							</ul>
+							<!-- /.list-unstyled blog-card__meta -->
+							<h4 class="blog-card__title">
+								<a href="blog-details.html">The right way to grow the three sisters of the field</a>
+							</h4>
+							<!-- /.blog-card__title -->
+							<a href="blog-details.html" class="blog-card__link">
+								<span>Read more</span>
+								<span class="blog-card__link__rightarrow">
+									<i class="icon-right-arrow2"></i>
+								</span>
+							</a>
+							<!-- /.blog-card__link -->
+						</div>
+						<!-- /.blog-card__content -->
+					</div>
+					<!-- /.blog-card -->
+				</div>
+				<!-- /.item -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.blog-one blog-one--page -->
+
+	<section class="companies-one">
+		<div class="container">
+			<div class="companies-one__sctwrap wow fadeInUp" data-wow-delay="100ms">
+				<div class="sec-title">
+
+
+					<h2 class="sec-title__title">We collaborate with 20k+ leading
+						<br>
+						gardening companies</h2>
+					<!-- /.sec-title__title -->
+				</div>
+				<!-- /.sec-title -->
+			</div>
+
+			<div class="companies-one__carousel grdeen-owl__carousel grdeen-owl__carousel--with-shadow grdeen-owl__carousel--basic-nav owl-carousel" data-owl-options='{
+								"items": 1,
+								"margin": 0,
+								"loop": true,
+								"smartSpeed": 700,
+								"nav": false,
+								"navText": [""],
+								"dots": true,
+								"autoplay": false,
+								"responsive": {
+									"0": {
+										"items": 1
+									},
+									"768": {
+										"items": 2
+									},
+									"992": {
+										"items": 3
+									},
+									"1367": {
+										"items": 4
+									}
+								}
+							}'>
+				<div class="item">
+					<div class="companies-one__image">
+						<div class="companies-one__inner-img">
+							<a href="#"><img src="{{asset('themes/base/assets/images/resources/brand-logo1-1.png')}}" alt="grdeen"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="companies-one__image">
+						<div class="companies-one__inner-img">
+							<a href="#"><img src="{{asset('themes/base/assets/images/resources/brand-logo1-2.png')}}" alt="grdeen"></a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="companies-one__image">
+						<div class="companies-one__inner-img">
+							<a href="#"><img src="{{asset('themes/base/assets/images/resources/brand-logo1-3.png')}}" alt="grdeen"></a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="companies-one__image">
+						<div class="companies-one__inner-img">
+							<a href="#"><img src="{{asset('themes/base/assets/images/resources/brand-logo1-4.png')}}" alt="grdeen"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.companies-one -->
+
+	<section class="great-together">
+		<div class="container">
+			<div class="great-together__wrapper">
+				<div class="great-together__bg" style="background-image: url('{{asset('themes/base/assets/images/backgrounds/companies-bg1-1.jpg')}}');"></div>
+				<div class="great-together__overlay"></div>
+				<div class="great-together__content text-center">
+					<h3 class="great-together__title">Let's make something great together</h3>
+					<p class="great-together__text">Tell us about your garden, and get a price with consultation</p>
+					<a href="prices.html" class="grdeen-btn great-together__btn">
+						<span>GET Our Price</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.great-together -->
 {% endblock %}

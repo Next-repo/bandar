@@ -1,5 +1,8 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+        appName: "Bandar - Abro Solution"
+        appDescription: "Over 20 years of experience we’ll ensure you get the best guidance."
 
 when@test:
     twig:

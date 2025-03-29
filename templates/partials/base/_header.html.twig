@@ -1,0 +1,73 @@
+<header class="main-header sticky-header sticky-header--normal">
+	<div class="container-fluid">
+		<div class="main-header__inner">
+			<div class="main-header__logo">
+				<a href="index.html">
+					<img src="{{asset('img/logo.png')}}" width="198" alt="Grdeen HTML">
+				</a>
+			</div>
+			<!-- /.main-header__logo -->
+
+			<nav class="main-header__nav main-menu">
+				<ul class="main-menu__list">
+					<li>
+						<a href="{{path('accueil')}}">Accueil</a>
+					</li>
+					<li>
+						<a href="{{path('apropos')}}">A propos</a>
+					</li>
+					<li>
+						<a href="{{path('services')}}">Service</a>
+					</li>
+					<li>
+						<a href="{{path('contact')}}">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /.main-header__nav -->
+			<div class="main-header__right">
+				<div class="mobile-nav__btn mobile-nav__toggler">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.mobile-nav__toggler -->
+				<a href="contact.html" class="grdeen-btn main-header__btn">
+					<span>Get A Quote</span>
+				</a>
+				<!-- /.thm-btn main-header__btn -->
+				<a href="#" class="search-toggler main-header__search">
+					<div class="main-header__search__icon">
+						<i class="icon-search" aria-hidden="true"></i>
+					</div>
+					<span class="sr-only">Search</span>
+				</a>
+				<!-- /.search-toggler -->
+				<a href="cart.html" class="main-header__cart">
+					<div class="main-header__cart__icon">
+						<i class="icon-shop-bag" aria-hidden="true"></i>
+					</div>
+					<span class="main-header__cart__count">0</span>
+					<span class="sr-only">cart</span>
+				</a>
+				<!-- /.cart-toggler -->
+
+				<div class="main-header__helpline">
+					<div class="main-header__helpline__bg" style="background-image: url('assets/images/shapes/nav-phone-icon.png');"></div>
+					<div class="main-header__helpline__icon">
+						<i class="icon-phone-receiver-silhouette"></i>
+					</div>
+					<div class="main-header__helpline__phonewrap">
+						<p class="main-header__helpline__text">Helpline</p>
+						<a class="main-header__helpline__tel" href="tel:+8805002451">+88 05 00 24 51
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.main-header__right -->
+		</div>
+		<!-- /.main-header__inner -->
+	</div>
+	<!-- /.container-fluid -->
+</header>
+<!-- /.main-header -->
